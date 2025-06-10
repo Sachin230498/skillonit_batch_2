@@ -1,0 +1,20 @@
+#main{
+    height: 500px;
+    font-size: 30px;
+    border: 5px solid red;
+    display: flex;
+
+    /* flex properties */
+    /* flex-direction: row; defult */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    
+}
+
+#main>div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+}
