@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #nav {
+        font-size: 45px;
+        background-color: yellow;
+        padding: 10px 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #upper{
+        /* border: 2px solid; */
+        height: 500px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #red{
+        width: 65%;
+        height: 100%;
+        background-color: red;
+      }
+
+
+      #green{
+        width: 30%;
+        height: 100%;
+        /* background-color: bisque; */
+        display: grid;
+        gap: 20px;
+      }
+      #green>div{
+        /* border:2px solid red; */
+        background-color: greenyellow;
+      }
+
+    /* tablet screen */
+      @media all and (min-width:480px) and (max-width:768px){
+        #upper{
+            display: block;
+        }
+
+        #red{
+            width: 100%;
+        }
+
+        #green{
+            width: 100%;
+            height: 150px;
+            margin-top: 20px;
+            grid-template-columns: repeat(3,1fr);
+        }
+      }
+
+          /* mobile screen */
+          @media all and (min-width:320px) and (max-width:479px){
+        #upper{
+            display: block;
+        }
+
+        #red{
+            width: 100%;
+        }
+
+        #green{
+            width: 100%;
+            
+            margin-top: 20px;
+            grid-template-columns: repeat(1,1fr);
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="nav">Navigation</div>
+
+    <div id="upper">
+         <div id="red">red</div>
+         <div id="green">
+            <div>box-1</div>
+            <div>box-2</div>
+            <div>box-3</div>
+         </div>
+    </div>
+  </body>
+</html>

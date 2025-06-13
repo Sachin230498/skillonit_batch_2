@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 450px;
+            /* height: 500px; */
+            /* border: 5px solid; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 40px 0;
+        }
+
+        #display{
+            width: 85%;
+            margin: auto;
+            height: 75px;
+            /* border: 2px solid red; */
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #keyboard{
+            width: 85%;
+            margin: auto;
+            height: 58%;
+            /* border: 2px solid rgb(25, 0, 255); */
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+           gap: 15px;
+        }
+
+        #keyboard>div{
+            font-size: 30px;
+            font-weight: bold;
+            /* border: 2px solid; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+            align-items: center;
+        }
+
+        .bl{
+            color: white;
+            background-color: black;
+        }
+
+        .or{
+            color: white;
+            background-color: orangered;
+        }
+
+        #anch{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div id="display"></div>
+        <div id="keyboard">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="bl">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="bl">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="bl">*</div>
+            <div class="or">C</div>
+            <div>0</div>
+            <div class="bl">=</div>
+            <div class="bl">/</div>
+          
+        </div>
+    </div>
+
+
+
+    <a id="anch" href="">Hello</a>
+</body>
+</html>
