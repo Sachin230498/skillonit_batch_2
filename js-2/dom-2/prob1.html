@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-2</title>
+   
+</head>
+<body>
+    <h1 id="head" class="heading">I am heading - 1</h1>
+    <h1>I am heading - 2</h1>
+    <h1 class="heading">I am heading - 3</h1>
+
+    <div>
+        <p class="heading">I am para - 1</p>
+        <h1>I am heading 4</h1>
+    </div>
+</body>
+<script>
+ let x =    document.getElementById("head")
+//  console.log(x.innerText)
+ let y = document.getElementsByClassName("heading")
+//  console.log(y[2].innerText)
+
+
+for(let i=0;i<y.length;i++){
+    console.log(y[i].innerHTML)
+    y[i].style.backgroundColor = "blue"
+}
+
+// How to Style
+
+x.style.color = "red";
+x.style.fontSize = "40px";
+
+
+
+// y[1].style.color = "blue";
+
+
+
+
+</script>
+</html>

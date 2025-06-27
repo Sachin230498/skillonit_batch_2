@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Dom</h1>
+
+    <button>Click</button>
+
+    <button id="like">like Me</button>
+</body>
+<script>
+    // addeventlistner
+    let btn = document.querySelector("button")
+    let like = document.getElementById("like")
+    let head = document.querySelector("h1")
+
+    btn.addEventListener("click",fun1)
+
+    function fun1(){
+        alert("hello, how are you")
+    }
+
+
+
+    like.addEventListener("mouseover",colorfun)
+    like.addEventListener("mouseout",colorfun1)
+
+    function colorfun(){
+    // console.log("hello")
+    head.style.color = "red"
+    }
+    function colorfun1(){
+    // console.log("hello")
+    head.style.color = "black"
+    }
+
+
+    
+</script>
+</html>
