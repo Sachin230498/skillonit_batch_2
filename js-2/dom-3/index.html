@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main"></div>
+    <div id="main2"></div>
+  </body>
+  <script>
+    let main2 = document.getElementById("main2");
+
+//    let name = ["Raupli", "Vaibhav", "Gaurav", "Harsh", "Parth", "Amol"];
+//    let color = ["red","violet","blue","purple","green","orange" ]
+
+   let data =[ 
+    {
+    name:"Rapali",
+    color:"orange"
+   },
+    {
+    name:"Vaibhav",
+    color:"green"
+   },
+    {
+    name:"Gaurav",
+    color:"pink"
+   },
+    {
+    name:"Harsh",
+    color:"purple"
+   },
+    {
+    name:"Parth",
+    color:"red"
+   },
+   {
+    name:"Amol",
+    color:"black"
+   }
+]
+
+   for(let i=0;i<data.length;i++){
+    // console.log(name[i])
+    let x = document.createElement("h1");
+    x.innerText = data[i].name;
+
+    x.style.color = data[i].color;
+
+    main2.append(x)
+   }
+
+
+
+
+
+    // // creat
+
+    // // for (let i = 1; i <= 5; i++) {
+    // //   console.log(i)
+    // //   let x = document.createElement("h1");
+    // //   x.innerText = "hello"+i;
+    // //   main.append(x);
+    // // }
+
+    // // let para = document.createElement("p")
+    // // para.innerText = "I am para"
+    // // // append
+    // // // appenchild
+
+    // // // console.log(x)
+
+    // let name = ["Raupli", "Vaibhav", "Gaurav", "Harsh", "Parth", "Amol"];
+
+    // for (let i = 0; i < name.length; i++) {
+    //   let n = document.createElement("h1");
+    //   //    n.innerText = name[i]
+    //   //    console.log(name[i])
+    //   main.append(n);
+    // }
+  </script>
+</html>

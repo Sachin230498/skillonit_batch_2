@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form>
+        <input id="name" type="text" placeholder="Enter your name">
+        <br>
+        <input id="pass" type="password" placeholder="Enter your password">
+        <br>
+        <input id="mobile" type="password" placeholder="Enter your password">
+        <br>
+         <select id="gender">
+            <option value="">Choose your gender</option>
+            <option value="male">M</option>
+            <option value="female">F</option>
+         </select>
+        <br>
+        <input type="submit" value="Login">
+     </form>
+
+     <br><br><br><br><br><br>
+
+     <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Mobile</th>
+                <th>Gender</th>
+                <th>Complete</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- append your data -->
+        </tbody>
+     </table>
+</body>
+<script>
+    let form = document.querySelector("form");
+    let name = document.getElementById("name")
+    let pass = document.getElementById("pass")
+
+    form.addEventListener("submit", loginfun)
+
+ function loginfun(){
+    event.preventDefault()
+        // console.log("hello")
+        // console.log(name.value)
+        // console.log(pass.value)
+ }
+
+</script>
+</html>
