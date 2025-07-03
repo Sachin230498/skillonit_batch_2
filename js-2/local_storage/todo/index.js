@@ -6,8 +6,8 @@ let tbody = document.querySelector("tbody")
 
 form.addEventListener("submit", getData)
 
-let todo_data = [];
-
+let todo_data = JSON.parse(localStorage.getItem("data")) || [];
+display(todo_data);
 function getData(){
 
     event.preventDefault();
@@ -17,7 +17,8 @@ function getData(){
     priority:priority.value
     }
    todo_data.push(obj)
-console.log(todo_data)
+// console.log(todo_data)
+  localStorage.setItem("data",JSON.stringify(todo_data) )
    display(todo_data)
 }
 
@@ -56,6 +57,7 @@ function delfun(i){
     // console.log(event)
     // event.target.parentNode.remove()
     todo_data.splice(i,1)
+    localStorage.setItem("data", JSON.stringify(todo_data));
     display(todo_data)
 }
 

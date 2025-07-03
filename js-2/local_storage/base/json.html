@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+</body>
+<script>
+    // let data = {
+    //     a:10,
+    //     b:20
+    // }
+
+    // let json_data = {
+    //     "a":10,
+    //     "b":20
+    // }
+
+    // console.log(json_data)
+
+    // JSON.stringify()
+    // JSON.parse()
+
+
+    // let arr = [12,34,58,2,5]
+    // console.log(arr)
+
+    // let x = JSON.stringify(arr)  // "[12,34,58,2,5]"
+    // console.log(x)  
+
+    let obj = {a:10, b:12}
+
+    localStorage.setItem("object",JSON.stringify(obj))
+  
+    let y = JSON.parse( localStorage.getItem("object"))
+    console.log(y)
+    
+
+  
+</script>
+</html>

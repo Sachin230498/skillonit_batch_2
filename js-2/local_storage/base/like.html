@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+
+    <button onclick="counter()">Like Me 👍</button>
+</body>
+<script>
+      let count =  localStorage.getItem("count") || 0;
+    //   if( localStorage.getItem("count")==null){
+    //     count =0
+    //   }else{
+    //     count =  localStorage.getItem("count");
+    //   }
+    let h1 = document.querySelector("h1")
+    h1.innerText = count;
+  
+    function counter(){
+      
+       count++;
+       h1.innerText = count;
+       localStorage.setItem("count", count)
+    }
+
+    // let x = localStorage.getItem("abc")
+    // console.log(x)
+
+</script>
+</html>
